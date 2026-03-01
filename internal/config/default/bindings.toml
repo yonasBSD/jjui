@@ -4,7 +4,6 @@ bindings = [
     { key = "q", action = "ui.quit", scope = "ui", desc = "quit" },
     { key = "?", action = "ui.expand_status", scope = "ui", desc = "help" },
     { key = "ctrl+z", action = "ui.suspend", scope = "ui", desc = "suspend" },
-    { key = "shift+w", action = "ui.open_command_history", scope = "ui", desc = "command history" },
 
     # revset
     { key = ["esc", "ctrl+c"], action = "revset.cancel", scope = "revset", desc = "cancel" },
@@ -67,6 +66,7 @@ bindings = [
     { key = ":", action = "ui.exec_jj", scope = "revisions", desc = "exec jj" },
     { key = "$", action = "ui.exec_shell", scope = "revisions", desc = "exec shell" },
     { key = "/", action = "ui.quick_search", scope = "revisions", desc = "search" },
+    { key = "shift+w", action = "ui.open_command_history", scope = "revisions", desc = "command history" },
 
     # revisions.quick_search
     { key = "'", action = "revisions.quick_search_next", scope = "revisions.quick_search", desc = "next" },
