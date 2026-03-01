@@ -214,7 +214,7 @@ func run() int {
 	}
 	appContext.CurrentRevset = appContext.DefaultRevset
 
-	p := tea.NewProgram(ui.New(appContext))
+	p := tea.NewProgram(ui.New(appContext), tea.WithInput(os.Stdin))
 	if config.Current.Ssh.HijackAskpass {
 		if err := askpassServer.StartListening(); err != nil {
 			fmt.Fprintf(os.Stderr, "Error: ssh.hijack_askpass: %v\n", err)
